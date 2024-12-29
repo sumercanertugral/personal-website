@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scertugral</title>
+    <link rel="icon" type="image/jpg" href="images/eye.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="images/eye.jpg">
+    <link rel="apple-touch-icon" href="images/eye.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/eye.jpg" alt="Eye Logo">
+                <span>reSumer</span>
+            </div>
+            <ul>
+                <li><a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                <li><a href="#about" data-tr="Hakkımda" data-en="About">Hakkımda</a></li>
+                <li><a href="#projects" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+                <li><a href="#contact" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+                <li class="lang-switch">
+                    <button onclick="switchLanguage('tr')" class="lang-btn active">TR</button>
+                    <button onclick="switchLanguage('en')" class="lang-btn">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 data-tr="Merhaba, Ben" data-en="Hello, I'm">Merhaba, Ben <span class="highlight">Sümer Can Ertuğral</span></h1>
+            <p class="subtitle" data-tr="Analitik Düşünen Yazılım Mühendisi" data-en="Analytical Thinking Software Engineer">Analitik Düşünen Yazılım Mühendisi</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary" data-tr="Projelerimi Gör" data-en="View My Projects">Projelerimi Gör</a>
+                <a href="#contact" class="btn secondary" data-tr="İletişime Geç" data-en="Contact Me">İletişime Geç</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-tr="🚀 Analitik düşünen, çözüm üreten bir yazılım mühendisiyim! 💻" data-en="🚀 I'm an analytical thinking, solution-driven software engineer! 💻">🚀 Analitik düşünen, çözüm üreten bir yazılım mühendisiyim! 💻</p>
+                    <p data-tr="💡 Karmaşık sorunları basit, etkili ve yaratıcı çözümlere dönüştürmeyi seviyorum. 🧩" data-en="💡 I love turning complex problems into simple, effective, and creative solutions. 🧩">💡 Karmaşık sorunları basit, etkili ve yaratıcı çözümlere dönüştürmeyi seviyorum. 🧩</p>
+                    <p data-tr="🌟 Teknoloji tutkusuyla her zaman bir adım ötesini hedefliyorum! ✨" data-en="🌟 With a passion for technology, I always aim one step ahead! ✨">🌟 Teknoloji tutkusuyla her zaman bir adım ötesini hedefliyorum! ✨</p>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 data-tr="Projeler" data-en="Projects">Projeler</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Home-Surveillance-Automation-System</h3>
+                        <p data-tr="Bu proje, ev ortamında kullanılan 4 güvenlik kamerasının işlevselliğini artırmak amacıyla ihtiyaçtan doğmuştur. Geliştirilen sistem; yüz tanıma, hareket algılama, ve güvenlik alarmlarıyla e-posta bildirimlerini içeren otomatik uyarı özellikleri sunmaktadır. Daha fazlası için tıklayın! 😊" 
+                           data-en="This project was born out of the need to enhance the functionality of 4 security cameras used in a home environment. The developed system offers automatic alert features including face recognition, motion detection, and security alarms with email notifications. Click for more! 😊">
+                            Bu proje, ev ortamında kullanılan 4 güvenlik kamerasının işlevselliğini artırmak amacıyla ihtiyaçtan doğmuştur. Geliştirilen sistem; yüz tanıma, hareket algılama, ve güvenlik alarmlarıyla e-posta bildirimlerini içeren otomatik uyarı özellikleri sunmaktadır. Daha fazlası için tıklayın! 😊
+                        </p>
+                        <span class="read-more" onclick="openModal('surveillance-modal')" data-tr="Devamını Oku" data-en="Read More">Devamını Oku</span>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Keras</span>
+                            <span>TensorFlow</span>
+                            <span>Tkinter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 data-tr="Yakında" data-en="Coming Soon">Yakında</h3>
+                        <p data-tr="Yeni projelerim çok yakında burada yer alacak! 🎉 Canlı ortamda çalışan uygulamalar, etkileyici çalışmalar ve bağlantılarıyla birlikte detaylar için hazır olun. Güncellemelerden haberdar olmak için takipte kalmayı unutmayın! 🚀" 
+                           data-en="My new projects will be here very soon! 🎉 Get ready for live applications, impressive works, and details with their links. Don't forget to stay tuned for updates! 🚀">
+                            Yeni projelerim çok yakında burada yer alacak! 🎉 Canlı ortamda çalışan uygulamalar, etkileyici çalışmalar ve bağlantılarıyla birlikte detaylar için hazır olun. Güncellemelerden haberdar olmak için takipte kalmayı unutmayın! 🚀
+                        </p>
+                        <div class="project-tags">
+                            <span data-tr="Çok Yakında" data-en="Coming Soon">Çok Yakında</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
+            <div class="social-links">
+                <a href="https://github.com/sumercanertugral" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span data-tr="GitHub" data-en="GitHub">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sumercanertugral/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span data-tr="LinkedIn" data-en="LinkedIn">LinkedIn</span>
+                </a>
+                <a href="https://x.com/i/flow/login" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <span data-tr="X" data-en="X">X</span>
+                </a>
+                <a href="mailto:sumercanertugral@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span data-tr="E-posta" data-en="Email">E-posta</span>
+                </a>
+                <a href="https://open.spotify.com/user/2re9bt8cpdnokb9apc88ettnw?si=cetcnDibQPedG5nLy_i9Ew" class="social-link" target="_blank">
+                    <i class="fab fa-spotify"></i>
+                    <span data-tr="Spotify" data-en="Spotify">Spotify</span>
+                </a>
+                <a href="https://strava.app.link/N0hLSwysJPb" class="social-link" target="_blank">
+                    <i class="fab fa-strava"></i>
+                    <span data-tr="Strava" data-en="Strava">Strava</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-tr="© 2024 Sümer Can Ertuğral. Tüm hakları saklıdır." data-en="© 2024 Sümer Can Ertuğral. All rights reserved.">© 2024 Sümer Can Ertuğral. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="surveillance-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('surveillance-modal')">&times;</span>
+            <h3 data-tr="Ev Güvenlik Otomasyon Sistemi" data-en="Home Surveillance Automation System">Ev Güvenlik Otomasyon Sistemi</h3>
+            <img src="images/home-surveillance.png" alt="Home Surveillance System" class="project-image">
+            <p data-tr="Bu projenin amacı, bir ev ortamındaki dört güvenlik kamerasının işlevselliğini artırmak ve yüz tanıma, hareket algılama, güvenlik alarmları ve e-posta bildirimlerini içeren gelişmiş güvenlik özellikleri entegre etmekti. Sistem, çeşitli teknolojiler kullanıldı: yüz tanıma Keras kütüphanesi ve haar cascades kullanılarak uygulandı, nesne tespiti SSD MobileNet V3 ve OpenCV ile gerçekleştirildi ve temel hareket algılama algoritmaları geliştirildi. Ayrıca, kolay etkileşim ve kontrol için Tkinter kullanılarak bir kullanıcı arayüzü oluşturuldu. Projenin temel özellikleri arasında gelişmiş güvenlik için gerçek zamanlı yüz tanıma ve hareket algılama, yetkisiz erişim veya şüpheli aktiviteleri kullanıcılara bildirmek için otomatik bir uyarı sistemi ve gözetim sisteminin kolay izlenmesi ve yönetimi için kullanıcı dostu bir arayüz yer aldı." 
+               data-en="The objective of this project was to enhance the functionality of four surveillance cameras within a home environment by integrating advanced security features such as face recognition, motion detection, and automated alerts, including security alarms and email notifications. The system utilized various technologies: face recognition was implemented using the Keras library and haar cascades, object detection was achieved with SSD MobileNet V3 and OpenCV, and basic motion detection algorithms were developed. Additionally, a user interface was created using Tkinter for easy interaction and control. The key features of the project included real-time face recognition and motion detection for enhanced security, an automated alert system to notify users of unauthorized access or suspicious activities, and a user-friendly interface that allowed for easy monitoring and management of the surveillance system.">
+                Bu projenin amacı, bir ev ortamındaki dört güvenlik kamerasının işlevselliğini artırmak ve yüz tanıma, hareket algılama, güvenlik alarmları ve e-posta bildirimlerini içeren gelişmiş güvenlik özellikleri entegre etmekti. Sistem, çeşitli teknolojiler kullanıldı: yüz tanıma Keras kütüphanesi ve haar cascades kullanılarak uygulandı, nesne tespiti SSD MobileNet V3 ve OpenCV ile gerçekleştirildi ve temel hareket algılama algoritmaları geliştirildi. Ayrıca, kolay etkileşim ve kontrol için Tkinter kullanılarak bir kullanıcı arayüzü oluşturuldu. Projenin temel özellikleri arasında gelişmiş güvenlik için gerçek zamanlı yüz tanıma ve hareket algılama, yetkisiz erişim veya şüpheli aktiviteleri kullanıcılara bildirmek için otomatik bir uyarı sistemi ve gözetim sisteminin kolay izlenmesi ve yönetimi için kullanıcı dostu bir arayüz yer aldı.
+            </p>
+            <img src="images/project-interface.png" alt="Project Interface" class="project-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
